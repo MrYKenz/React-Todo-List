@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Header from './components/layout/Header';
 import Todos from './components/Todos';
+import AddTodo from './components/AddTodo';
 import './App.css';
 
 class App extends Component {
@@ -22,11 +24,28 @@ class App extends Component {
       },
     ]
   }
+  
+  makeComplete = (id) => {
+    this.setState({ todos: this.state.todos.map(todo => {
+      if(todo.id === id) { // if id matches one checked
+        todo.completed = !todo.completed
+      }
+      return todo; }) 
+    });
+  }
+
+  deleteTask = (id) => {
+    this.setState({ todos: [...this.state.todos.filter(
+      todo => todo.id !== id)] });
+  }
 
   render() {
       return (
         <div className="App">
-          <Todos todos={this.state.todos} />
+          <Header />
+          <AddTodo />
+          <Todos todos={this.state.todos} makeComplete={this.makeComplete} 
+          deleteTask={this.deleteTask} />
         </div>
       );
     }
