@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 // import { id } from 'postcss-selector-parser';
 
 export class TodoItem extends Component {
@@ -25,10 +25,12 @@ export class TodoItem extends Component {
     }
 }
 
-// Proptypes
-// TodoItem.propTypes = {
-//     todos: PropTypes.object.isRequired
-// }
+// Proptypes for strict typing in React
+TodoItem.propTypes = {
+    todo: PropTypes.array.isRequired,
+    makeComplete: PropTypes.func.isRequired,
+    deleteTask: PropTypes.func.isRequired
+}
 
 const btnStyle = {
     backgroundColor: '#ff5b5b',

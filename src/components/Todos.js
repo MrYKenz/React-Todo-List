@@ -11,9 +11,11 @@ class Todos extends Component {
    }    
 }
 
-// Proptypes 
+// Proptypes for strict typing in React
 Todos.propTypes = {
-    todos: PropTypes.array.isRequired
+    todos: PropTypes.array.isRequired,
+    makeComplete: PropTypes.func.isRequired,
+    deleteTask: PropTypes.func.isRequired
 }
 
 export default Todos;
