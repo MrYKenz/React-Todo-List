@@ -4,14 +4,14 @@ import Header from './components/layout/Header';
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
-import uuid from 'uuid';
+import uuid from 'uuid'; // prevent same IDs when adding todos 
 import './App.css';
 
 class App extends Component {
     state = {
       todos: [
       {
-        id: uuid.v4(),
+        id: uuid.v4(), // generates unique ID
         title: 'Task 1',
         completed: false
       },
