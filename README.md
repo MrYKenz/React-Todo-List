@@ -1,9 +1,9 @@
-Basic To Do List created with React.
+Basic To Do List created with React framework.
 
-Packages also include React Router and UUID (for unique item IDs).
+Packages include React Router (about page) and UUID (for unique item IDs).
 
-The built project is currently deployed in gh-pages, preview with link below:
+The project build is currently in the gh-pages branch but deployed here:
 
-https://mrykenz.github.io/React-Todo-List/
+https://eager-dijkstra-e8ac25.netlify.com/
 
 Created for educational purposes.
