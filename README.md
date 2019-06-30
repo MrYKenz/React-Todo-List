@@ -1,9 +1,9 @@
-Basic To Do List created with React framework.
+# Basic To Do List created with React framework. :exclamation:
 
-Packages include React Router (about page) and UUID (for unique item IDs).
+:gear: Packages include React Router (about page) and UUID (for unique item IDs).
 
-The project build is currently in the gh-pages branch but deployed here:
+:rocket: The project build is currently in the gh-pages branch but deployed here:
 
 https://eager-dijkstra-e8ac25.netlify.com/
 
-Created for educational purposes.
+:books: Created for educational purposes.
