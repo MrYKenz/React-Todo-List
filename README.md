@@ -2,8 +2,8 @@
 
 :gear: Packages include React Router (about page) and UUID (for unique item IDs).
 
-:rocket: The project build is currently in the gh-pages branch but deployed here:
+The project build is currently in the gh-pages branch.
 
-https://eager-dijkstra-e8ac25.netlify.com/
+:rocket: [Click For Demo](https://eager-dijkstra-e8ac25.netlify.com/)
 
 :books: Created for educational purposes.
