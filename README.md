@@ -1,4 +1,4 @@
-# Basic To Do List created with React framework. :exclamation:
+# Basic To Do List created with React. :inbox_tray:
 
 :gear: Packages include React Router (about page) and UUID (for unique item IDs).
 
