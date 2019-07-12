@@ -39,9 +39,7 @@ export class AddTodo extends Component {
 
 // Proptypes for strict typing in React
 AddTodo.propTypes = {
-    addTodo: PropTypes.array.isRequired,
-    makeComplete: PropTypes.func.isRequired,
-    deleteTask: PropTypes.func.isRequired,
+    addTodo: PropTypes.func.isRequired
 }
 
 export default AddTodo

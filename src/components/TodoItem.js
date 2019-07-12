@@ -27,7 +27,7 @@ export class TodoItem extends Component {
 
 // Proptypes for strict typing in React
 TodoItem.propTypes = {
-    todo: PropTypes.array.isRequired,
+    todo: PropTypes.object.isRequired,
     makeComplete: PropTypes.func.isRequired,
     deleteTask: PropTypes.func.isRequired
 }
