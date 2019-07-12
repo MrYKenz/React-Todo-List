@@ -6,20 +6,21 @@ export class AddTodo extends Component {
         title: ''
     }
 
+    // send title to addTodo in App.js to create new todo in App.js State
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addTodo(this.state.title);
-        this.setState({title:''});
+        this.setState({title:''}); // reset value so one todo created each time
     }
 
-    onChange = (e) => this.setState({[e.target.name]: e.target.value});
+    onChange = (e) => this.setState({title: e.target.value}); // [e.target.name] to grab values of other fields
 
     render() {
         return (
             <form onSubmit={this.onSubmit} style={{display: 'flex'}}>
                 <input
                     type="text"
-                    name="title"
+                    name="title" // used by onChange to get value to change state
                     style={{flex: '10', padding: '5px'}}
                     placeholder="Add a task... "
                     value={this.state.title}
